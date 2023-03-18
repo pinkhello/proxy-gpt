@@ -22,5 +22,3 @@ export default async function handler(req: NextRequest) {
         console.log(e)
     }
 }
-
-export default handler;
