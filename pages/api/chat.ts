@@ -13,7 +13,6 @@ export default async function handler(req: NextRequest) {
         body: req.body,
         redirect: 'follow'
     })
-    console.log("===" + modReq.method)
     try {
         const resp = await fetch(modReq);
         const modResp = new Response(resp.body, resp);

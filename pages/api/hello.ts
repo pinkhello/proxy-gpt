@@ -8,7 +8,6 @@ export const config = {
 
 
 export default async function handler(req: NextRequest) {
-    console.log(req.url)
     return new Response(
         JSON.stringify(
             {name: 'Your are good luck!'}
