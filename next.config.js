@@ -3,6 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     runtime: 'edge',
+  },
+  output: 'standalone',
+  async rewrites() {
+    return [
+      {
+        source: "/proxy/:slug*",
+        destination: "https://api.openai.com/:slug*",
+      },
+    ];
   }
 }
 

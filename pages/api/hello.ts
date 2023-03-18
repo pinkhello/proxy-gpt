@@ -2,11 +2,16 @@
 // /api/hello
 import {type NextRequest} from "next/server";
 
+export const config = {
+    runtime: 'edge',
+}
+
+
 export default async function handler(req: NextRequest) {
     console.log(req.url)
     return new Response(
         JSON.stringify(
-            {name: 'John Doe'}
+            {name: 'Your are good luck!'}
         ), {
             status: 200,
             headers: {
