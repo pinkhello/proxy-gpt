@@ -5,7 +5,6 @@ export const config = {
     runtime: 'edge',
 }
 
-
 export default async function handler(req: NextRequest) {
     const modReq = new Request('https://api.openai.com/v1/chat/completions', {
         method: req.method,
