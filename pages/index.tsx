@@ -17,10 +17,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            <code className={styles.code}> Your Are Good Luck!</code>
+            <code className={styles.code}> GPT China, Your Are Good Luck!</code>
           </p>
         </div>
-
         <div className={styles.center}>
           <Image
             className={styles.logo}
